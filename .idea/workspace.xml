@@ -178,7 +178,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583161409919</updated>
-      <workItem from="1634867967263" duration="1750000" />
+      <workItem from="1634867967263" duration="1766000" />
+      <workItem from="1634870405327" duration="90000" />
     </task>
     <task id="LOCAL-00001" summary="update to null safety">
       <created>1634868139860</created>
@@ -187,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634868139860</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update to null safety">
+      <created>1634869791145</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1634869791145</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -239,6 +247,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update to null safety" />

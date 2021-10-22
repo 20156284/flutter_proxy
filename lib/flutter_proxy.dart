@@ -47,6 +47,6 @@ class ProxySetting {
 
   /// enabled
   bool get enabled =>
-      (host?.isNotEmpty ?? false) && //
+      (host != null && host!.isNotEmpty) && //
       (port != null && port! > 0);
 }
