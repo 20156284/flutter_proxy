@@ -11,17 +11,17 @@ class FlutterProxy {
   static Future<ProxySetting> get proxySetting async {
     return _channel //
         .invokeMapMethod<String, dynamic>('getProxySetting')
-        .then((e) => ProxySetting._fromMap(e));
+        .then((e) => ProxySetting._fromMap(e!));
   }
 }
 
 /// ProxySetting
 class ProxySetting {
   /// host
-  String host;
+  String? host;
 
   /// port
-  int port;
+  int? port;
 
   /// private
   ProxySetting._({
@@ -31,7 +31,6 @@ class ProxySetting {
 
   /// private
   factory ProxySetting._fromMap(Map<String, dynamic> map) {
-    map ??= {};
     return ProxySetting._(
       host: map['host'],
       port: map['port'] != null //
@@ -43,5 +42,5 @@ class ProxySetting {
   /// enabled
   bool get enabled =>
       (host?.isNotEmpty ?? false) && //
-      (port != null && port > 0);
+      (port != null && port! > 0);
 }
